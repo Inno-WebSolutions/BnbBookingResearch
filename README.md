@@ -1,65 +1,132 @@
-# How to Build a Airbnb Clone
+# BnB Booking Website
 
-Read the full tutorial here: [**>> How to Build a Airbnb Clone**](https://www.cometchat.com/tutorials/#)
+Welcome to the BnB Booking Website! This platform allows users to browse, book, and manage short-term rental properties seamlessly. It provides an intuitive interface for customers and property owners to connect in a streamlined and efficient manner.
 
-## Technology
+---
 
-This demo uses:
+## Features
 
-- CometChat Pro 3.0.0
-- CometChat UI Kit
-- Firebase
-- React.js
-- Uuid
-- Validator
-- @emotion/core
-- dateformat
-- emoji-mart
-- react-html-parser
-- twemoji
+### User-Focused Features
+- **Browse Properties:** View a list of available properties with filters for price, location, and amenities.
+- **Booking System:** Seamless booking process with real-time availability.
+- **User Profiles:** Secure user accounts to manage bookings, payment methods, and wishlists.
 
-## Running the demo
+### Host Features
+- **Property Listings:** Hosts can add, edit, and manage their property listings.
+- **Booking Management:** See upcoming bookings and manage availability.
+- **Earnings Dashboard:** Track income and payouts.
 
-To run the demo follow these steps:
+### Additional Features
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop.
+- **Secure Payments:** Integrated with a secure payment gateway for transactions.
+- **Reviews and Ratings:** Users can leave feedback and read reviews on properties.
+- **Interactive Maps:** Search properties by location with map integration.
 
-1. [Head to CometChat Pro and create an account](https://app.cometchat.com/signup)
-2. From the [dashboard](https://app.cometchat.com/apps), add a new app called **"airbnb"**
-3. Select this newly added app from the list.
-4. From the Quick Start copy the **APP_ID, APP_REGION and AUTH_KEY**. These will be used later.
-5. Also copy the **REST_API_KEY** from the API & Auth Key tab.
-6. Navigate to the Users tab, and delete all the default users and groups leaving it clean **(very important)**.
-7. Download the repository [here](https://github.com/hieptl/airbnb/archive/main.zip) or by running `git clone https://github.com/hieptl/airbnb.git` and open it in a code editor.
-8. [Head to Firebase and create a new project](https://console.firebase.google.com)
-9. Create a file called **.env** in the root folder of your project.
-10. Import and inject your secret keys in the **.env** file containing your CometChat and Firebase in this manner.
+---
 
-```js
-REACT_APP_FIREBASE_API_KEY=xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
-REACT_APP_FIREBASE_AUTH_DOMAIN=xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
-REACT_APP_FIREBASE_DATABASE_URL=xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
-REACT_APP_FIREBASE_STORAGE_BUCKET=xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
+## Tech Stack
 
-REACT_APP_COMETCHAT_APP_ID=xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
-REACT_APP_COMETCHAT_REGION=xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
-REACT_APP_COMETCHAT_AUTH_KEY=xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
-REACT_APP_COMETCHAT_API_KEY=xxx-xxx-xxx-xxx-xxx-xxx-xxx-xxx
+- **Frontend:** React (with React Router and Context API/Redux for state management)
+- **Backend:** Node.js with Express (or API integration if backend is separate)
+- **Database:** MongoDB / PostgreSQL
+- **Styling:** Tailwind CSS / CSS Modules
+- **Maps:** Google Maps API / Mapbox
+- **Payment Gateway:** Stripe / PayPal
+- **Authentication:** Firebase Authentication / Auth0
+
+---
+
+## Installation
+
+### Prerequisites
+- Node.js installed on your machine
+- A package manager (npm or yarn)
+
+### Steps to Install
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/bnb-booking-website.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd bnb-booking-website
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+4. Create an `.env` file and configure the required environment variables (e.g., API keys, database URIs).
+5. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+6. Open your browser and visit `http://localhost:3000`.
+
+---
+
+## Folder Structure
+
+```plaintext
+bnb-booking-website/
+|-- public/
+|   |-- index.html  # Main HTML file
+|-- src/
+|   |-- components/  # Reusable React components
+|   |-- pages/  # Individual pages (e.g., Home, Listings, Booking)
+|   |-- services/  # API service files
+|   |-- context/  # Context API setup
+|   |-- styles/  # Global and component-specific styles
+|   |-- App.js  # Root component
+|   |-- index.js  # Entry point
+|-- .env  # Environment variables
+|-- package.json  # Project metadata and dependencies
+|-- README.md  # Project documentation
 ```
 
-11. Make sure to exclude **.env** in your gitIgnore file from being exposed online.
-12. Run the following command to install the app.
+---
 
-```sh
-    npm install
-    npm run start
-```
+## Contributing
 
-Questions about running the demo? [Open an issue](https://github.com/hieptl/airbnb/issues). We're here to help ✌️
+We welcome contributions! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature/bugfix:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a Pull Request on GitHub.
 
-## Useful links
+---
 
-- 🏠 [CometChat Homepage](https://app.cometchat.com/signup)
-- 🚀 [Create your free account](https://app.cometchat.com/apps)
-- 📚 [Documentation](https://www.cometchat.com/docs/home/welcome)
-- 👾 [GitHub](https://www.github.com/cometchat-pro)
-- 🔥 [Firebase](https://console.firebase.google.com)
-- 🔷 [React.js](https://reactjs.org/)
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+---
+
+## Acknowledgements
+
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Google Maps API](https://developers.google.com/maps)
+- [Stripe Documentation](https://stripe.com/docs)
+
+---
+
+## Contact
+
+For any inquiries or support, please reach out to:
+- **Email:** innoweb-solutions00@gmail.com
+- **GitHub Issues:** [Issues](https://github.com/your-repo/bnb-booking-website/issues)
+
